@@ -5,6 +5,7 @@ import Root from './routes/Root'
 import MainPage from './routes/MainPage'
 import ErrorPage from './routes/ErrorPage'
 import Sabores from './routes/Sabores'
+import Presentaciones from './routes/Presentaciones'
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,9 @@ const router = createBrowserRouter([
     },{
       path: '/sabores',
       element: <Sabores/>
+    },{
+      path: '/Presentaciones',
+      element: <Presentaciones/>
     }]
   }
 ])

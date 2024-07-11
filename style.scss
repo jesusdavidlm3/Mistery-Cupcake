@@ -4,6 +4,11 @@
 body{
     margin: 0px;
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;             /* width of the entire scrollbar */
 }
 
 .NavBar{
@@ -59,7 +64,7 @@ body{
 
 .Page{
     width: 100vw;
-    // height: 100vh;
+    min-height: calc(100vh - 200px);
     margin: 0px;
     background-image: url('src/img/fondoInfinito.png');
     background-size: cover;
@@ -118,6 +123,66 @@ body{
             .right{
                 position: relative;
                 left: 50%;
+            }
+        }
+    }
+}
+
+.presentaciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .cardContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        margin: 100px 0px;
+
+        .card{
+            width: 27vw;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            height: 50vh;
+
+            img{
+                width: 20vw;
+            }
+
+            .Atropos, h3, h4{
+                position: relative;
+                bottom: 90px;
+                transition: all ease .5s;
+            }
+
+            .Atropos{
+                &:hover{
+                    filter: drop-shadow(0px 0px 25px black);
+                }
+            }
+
+            h3, h4{
+                color: white;
+                text-align: center;
+                margin: 0px;
+                bottom: 65px;
+            }
+
+            h3{
+                font-size: 50px;
+            }
+
+            h4{
+                font-size: 25px;
+
             }
         }
     }

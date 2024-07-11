@@ -11,7 +11,7 @@ const NavBar = () => {
             <div style={{display: 'flex', gap: '30px'}}>
                 <h3 onClick={() => navigate('/Main')}>Inicio</h3>
                 <h3 onClick={() => navigate('/sabores')}>Sabores</h3>
-                <h3>Presentaciones</h3>
+                <h3 onClick={() => navigate('/Presentaciones')}>Presentaciones</h3>
             </div>
         </div>
     )
