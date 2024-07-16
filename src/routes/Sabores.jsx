@@ -19,16 +19,16 @@ const Sabores = () => {
                     <Atropos className='left'>
                         <img src={sab1}/>
                     </Atropos>
-                    <Atropos>
+                    {/* <Atropos>
                         <img src={sab2}/>
                     </Atropos>
                     <Atropos className='right'>
                         <img src={sab3}/>
-                    </Atropos>
+                    </Atropos> */}
                     <Atropos>
                         <img src={sab4}/>
                     </Atropos>
-                    <Atropos className='left'>
+                    <Atropos className='right'>
                         <img src={sab5}/>
                     </Atropos>
                 </div>
@@ -46,12 +46,12 @@ const Sabores = () => {
                     <Atropos className='left'>
                         <img src={sab8}/>
                     </Atropos>
-                    <Atropos>
+                    {/* <Atropos>
                         <img src={sab9}/>
                     </Atropos>
                     <Atropos  className='right'>
                         <img src={sab10}/>
-                    </Atropos>
+                    </Atropos> */}
                 </div>
             </div>
         </div>

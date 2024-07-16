@@ -19,14 +19,14 @@ const NavBar = () => {
 
     return(
         <div className='NavBar'>
-            <img src={logo} className='Logo'/>
+            <img src={logo} className='Logo' onClick={() => navigate('/Main')}/>
             <div style={{display: 'flex', gap: '30px'}}>
                 <h3 onClick={() => navigate('/Main')}>Inicio</h3>
                 <h3 onClick={() => navigate('/sabores')}>Sabores</h3>
                 <h3 onClick={() => navigate('/Presentaciones')}>Presentaciones</h3>
             </div>
 
-            <IconButton onClick={() => setOpenMenu(true)} size='large'> <MenuIcon size={48}/> </IconButton>
+            <IconButton onClick={() => setOpenMenu(true)} size='large' className='mobile'> <MenuIcon size={48}/> </IconButton>
             <Drawer
                 open={openMenu}
                 onClose={() => setOpenMenu(false)}
