@@ -1,13 +1,22 @@
 import CarruselStart from '../components/CarruselStart';
-
-import fondo from '../img/fondoInfinito.png';
+import { Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { Environment, OrbitControls } from '@react-three/drei';
+import Model3D from '../../public/Scene'
 
 const MainPage = () => {
 
     return(
         <div className='Page'>
             <h1>Descubre el sabor</h1>
-            <CarruselStart/>
+            <Canvas>
+                <ambientLight />
+                <OrbitControls autoRotate={true} enableZoom={false} autoRotateSpeed={10} minDistance={5} />
+                <Suspense fallback={null}>
+                    <Model3D/>
+                </Suspense>
+                <Environment preset='sunset'/>
+            </Canvas>
             <div className='info'>
                 <h1>Sobre nosotros</h1>
                 <h3>
